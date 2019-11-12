@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="email.css" />
+  <body>
+    <div>Add/Search Email</div>
+    <button id="btn-clothes-1" class="search" onclick="searchInList()">
+      Search
+    </button>
+    <input type="text" id="email" placeholder="Enter Email" />
+
+    <button id="btn-clothes-1" class="add" onclick="addToList()">Add</button>
+    <div id="error" style="display:none">
+      Enter valid Email id or Email already exists in list
+    </div>
+    <div>
+      <input type="checkbox" id="enable" onClick="showEnabled()" />Show Only
+      Enabled
+    </div>
+    <div id="emailList">
+      <table id="list" style="display: block;"></table>
+    </div>
+    <script src="email.js"></script>
+  </body>
+</html>
